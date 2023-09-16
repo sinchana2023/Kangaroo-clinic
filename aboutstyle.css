@@ -1,0 +1,79 @@
+body{background: url(imga.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height:100%;
+  }
+
+h1{
+    font-style: georgia;
+    font-size: 70px;
+    text-align:left;
+    color:#452c21;
+}
+
+#box{
+    width:400px;
+    height:100px;
+    border:10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width:100%;
+    height: 100%;
+    border-color: black;
+    border-style:none;
+    margin:5px;
+    text-align:center;
+    font-size: 32px;
+    font-weight:bold;
+    padding-left: 10px;
+    
+}
+
+#contact{
+  color: white;
+  text-align: center;
+  margin-left:20px;
+  font-style: georgia;
+  font-size: 40px;
+}
+
+button{
+    position:papyrus;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #254e58; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  } 
+
+  h3{
+    margin-left:20px;
+    font-style: georgia;
+    font-size: 30px;
+    text-align:left;
+    color:#452c21;
+  }
+
+  p{
+    padding-left: 10px;;
+    margin-left:20px;
+    font-style: normal;
+    font-size: 20px;
+    text-align:left;
+    color:black;
+  }
+
+  div.sticky {
+    position: sticky;
+    top: 0;
+    background-color:#254e58;
+    padding: 20px;
+    font-size: 70px;
+    border-radius: 20px;
+  }

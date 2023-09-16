@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="raksha.css">
+    <script type="text/javascript">
+        function chkpasswords()
+        {
+            if(document.getElementById("user").value=="")
+            {
+                alert('you have not entered a username,please enter');
+                document.getElementById("user").focus();
+                return false;
+            }
+            else
+            if(document.getElementById("fp").value=="")
+            {
+                alert('you have not entered a password,please enter');
+                document.getElementById("fp").focus();
+                return false;
+            }
+            else
+            {
+                if((document.getElementById("user").value=="wad_project01") && (document.getElementById("fp").value=="1234"))
+                  { return true; }
+                else
+                {
+                    alert('invalid Username or password');
+                    document.getElementById("user").focus();
+                    return false;
+                }
+            }
+        }
+
+    </script>
+</head>
+<body>
+    
+    <div id="box">
+        <h1 >  <img src="logo.png" width="50px" height="50px">
+        Kangaroo Clinic 
+        <a href="home.html"><button type="button" name="button">Home</button></a>
+        <a href="about.html"><button type="button" name="button">About</button></a>
+        <a href="resource.html"><button type="button" name="button">Resource</button></a>
+        </h1>
+    </div>
+    <hr color="#4c3228"/>
+    <br/>
+    <div id="ob">
+    <div id="outerbox">  <!--LOGIN -->
+    <form name="myform" action="comp.html" onsubmit="return(chkpasswords());">
+    <p>
+        <pre><h3>    LogIn</h3>
+              <img style="width:100px;height:100px;" src="head.png"/><br/><br/></pre>
+          <label style="color:#70bfbc">UserName:</label>
+        <input type="text>" id="user">
+        <br/> <br/><br/>
+          <label style="color:#70bfbc">Password:</label>
+        <input type="password" id="fp">
+        <br/> <br/><br/>
+        <pre>       <input type="submit" value="Proceed to Book an Appointment" style="background-color: #70bfbc; padding: 5px;"/></pre><br/> <br/><br/>
+    </p>
+    </form>
+    </div>
+    </div>   
+</body>
+</html>
